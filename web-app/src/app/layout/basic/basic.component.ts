@@ -10,11 +10,11 @@ import { CONSTANTS } from '../../shared/constants';
   selector: 'layout-basic',
   template: `
     <layout-default [options]="options" [asideUser]="asideUserTpl" [nav]="navTpl" [content]="contentTpl" [customError]="null">
-      <layout-default-header-item direction="left">
+      <!-- <layout-default-header-item direction="left">
         <a layout-default-header-item-trigger href="//github.com/apache/hertzbeat" target="_blank">
           <i nz-icon nzType="github"></i>
         </a>
-      </layout-default-header-item>
+      </layout-default-header-item> -->
 
       <layout-default-header-item direction="left" hidden="pc">
         <div layout-default-header-item-trigger (click)="searchToggleStatus = !searchToggleStatus">
@@ -27,11 +27,11 @@ import { CONSTANTS } from '../../shared/constants';
       <layout-default-header-item direction="right" hidden="mobile">
         <header-notify></header-notify>
       </layout-default-header-item>
-      <layout-default-header-item direction="right" hidden="mobile">
+      <!-- <layout-default-header-item direction="right" hidden="mobile">
         <a layout-default-header-item-trigger routerLink="/passport/lock">
           <i nz-icon nzType="lock"></i>
         </a>
-      </layout-default-header-item>
+      </layout-default-header-item> -->
       <layout-default-header-item direction="right" hidden="mobile">
         <div layout-default-header-item-trigger nz-dropdown [nzDropdownMenu]="settingsMenu" nzTrigger="click" nzPlacement="bottomRight">
           <i nz-icon nzType="setting"></i>

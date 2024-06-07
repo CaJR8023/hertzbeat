@@ -1,19 +1,3 @@
-<!--
-  ~ Licensed to the Apache Software Foundation (ASF) under one or more
-  ~ contributor license agreements.  See the NOTICE file distributed with
-  ~ this work for additional information regarding copyright ownership.
-  ~ The ASF licenses this file to You under the Apache License, Version 2.0
-  ~ (the "License"); you may not use this file except in compliance with
-  ~ the License.  You may obtain a copy of the License at
-  ~
-  ~     http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  -->
 <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd
@@ -21,7 +5,7 @@ http://maven.apache.org/ASSEMBLY/2.0.0 ">
     <!--Required, will be appended to the end of the packaged file name-->
     <id>incubating-bin</id>
     <includeBaseDirectory>true</includeBaseDirectory>
-    <baseDirectory>apache-hertzbeat-${hzb.version}-incubating-bin</baseDirectory>
+    <baseDirectory>monitoring-${hzb.version}-incubating-bin</baseDirectory>
     <!--Packaging type, multiple types can be set, different types will be packaged when packaging-->
     <formats>
         <format>tar.gz</format>
@@ -90,38 +74,6 @@ http://maven.apache.org/ASSEMBLY/2.0.0 ">
                 <include>**/*</include>
             </includes>
             <outputDirectory>ext-lib</outputDirectory>
-        </fileSet>
-
-        <!-- license -->
-        <fileSet>
-            <directory>../</directory>
-            <outputDirectory>/</outputDirectory>
-            <includes>
-                <include>DISCLAIMER</include>
-                <include>README.md</include>
-            </includes>
-        </fileSet>
-        <fileSet>
-            <directory>../material/licenses</directory>
-            <outputDirectory>/</outputDirectory>
-            <includes>
-                <include>LICENSE</include>
-                <include>NOTICE</include>
-            </includes>
-        </fileSet>
-        <fileSet>
-            <directory>../material/licenses/backend</directory>
-            <outputDirectory>licenses</outputDirectory>
-            <includes>
-                <include>LICENSE-*</include>
-            </includes>
-        </fileSet>
-        <fileSet>
-            <directory>../material/licenses/frontend</directory>
-            <outputDirectory>licenses</outputDirectory>
-            <includes>
-                <include>LICENSE-*</include>
-            </includes>
         </fileSet>
     </fileSets>
 </assembly>

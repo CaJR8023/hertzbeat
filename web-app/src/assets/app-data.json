@@ -37,12 +37,6 @@
           "link": "/monitors"
         },
         {
-          "text": "Define",
-          "i18n": "menu.advanced.define",
-          "icon": "anticon-code",
-          "link": "/setting/define"
-        },
-        {
           "text": "Prometheus",
           "i18n": "menu.monitor.prometheus",
           "icon": "anticon-insert-row-below",
@@ -181,6 +175,12 @@
       "hideInBreadcrumb": true,
       "children": [
         {
+          "text": "Define",
+          "i18n": "menu.advanced.define",
+          "icon": "anticon-code",
+          "link": "/setting/define"
+        },
+        {
           "text": "status",
           "i18n": "menu.advanced.status",
           "icon": "anticon-mobile",
@@ -213,13 +213,6 @@
           "i18n": "menu.extras.settings",
           "icon": "anticon-setting",
           "link": "/setting/settings"
-        },
-        {
-          "text": "helpCenter",
-          "externalLink": "https://hertzbeat.apache.org/docs/help/guide",
-          "target": "_blank",
-          "i18n": "menu.extras.help",
-          "icon": "anticon-global"
         }
       ]
     }

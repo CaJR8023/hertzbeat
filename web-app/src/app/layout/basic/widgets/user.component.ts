@@ -22,10 +22,10 @@ import { CONSTANTS } from '../../../shared/constants';
           <i nz-icon nzType="logout" class="mr-sm"></i>
           {{ 'menu.account.logout' | i18n }}
         </div>
-        <div nz-menu-item (click)="showAboutModal()">
+        <!-- <div nz-menu-item (click)="showAboutModal()">
           <i nz-icon nzType="environment" class="mr-sm"></i>
           {{ 'menu.extras.about' | i18n }}
-        </div>
+        </div> -->
       </div>
     </nz-dropdown-menu>
     <nz-modal
@@ -119,7 +119,7 @@ export class HeaderUserComponent {
   }
 
   showAboutModal() {
-    this.isAboutModalVisible = true;
+    this.isAboutModalVisible = false;
   }
 
   disAboutModal() {
@@ -127,7 +127,7 @@ export class HeaderUserComponent {
   }
 
   showAndCloseAboutModal() {
-    this.isAboutModalVisible = true;
+    this.isAboutModalVisible = false;
     setTimeout(() => (this.isAboutModalVisible = false), 20000);
   }
 }

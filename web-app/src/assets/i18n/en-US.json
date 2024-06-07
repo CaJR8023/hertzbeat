@@ -497,7 +497,7 @@
   "app.login.message-need-credential": "Please enter password",
   "app.login.message-invalid-credentials": "Invalid username or password",
   "app.login.need-change-password": "Please update the initial default password in time!",
-  "app.login.tab-login-credentials": "Sign In HertzBeat",
+  "app.login.tab-login-credentials": "Sign In ",
   "app.login.remember-me": "Remember me",
   "app.login.login": "Login",
   "app.login.notify": "Please Login!",
