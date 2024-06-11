@@ -38,7 +38,7 @@ import { CONSTANTS } from '../../../shared/constants';
     >
       <div *nzModalContent class="-inner-content">
         <div style="text-align: center">
-          <img style="height: 33px" src="./assets/brand.svg" alt="" />
+          <img style="height: 33px" src="./assets/gvs_brand.png" alt="" />
         </div>
         <div style="margin-top: 10px; font-weight: bolder; font-size: small;">
           {{ 'about.title' | i18n }}

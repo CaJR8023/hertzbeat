@@ -379,9 +379,9 @@
         <nz-form-control nzSpan="8">
           <nz-input-number
             [(ngModel)]="monitor.intervals"
-            [nzMin]="monitor.app === 'push' ? 1 : 30"
+            [nzMin]="monitor.app === 'push' ? 1 : 10"
             [nzMax]="604800"
-            [nzStep]="monitor.app === 'push' ? 1 : 60"
+            [nzStep]="monitor.app === 'push' ? 1 : 30"
             name="intervals"
             id="intervals"
           >

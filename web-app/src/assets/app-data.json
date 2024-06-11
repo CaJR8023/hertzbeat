@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "HertzBeat",
+    "name": "",
     "description": " A real-time monitoring system with agentless, performance cluster, prometheus-compatible, custom monitoring and status page building capabilities."
   },
   "user": {

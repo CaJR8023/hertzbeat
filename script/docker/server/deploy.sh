@@ -16,8 +16,8 @@ docker rm monitoring
 docker run -p 1157:1157 -p 1158:1158 \
       -e LANG=zh_CN.UTF-8 \
       -e TZ=Asia/Shanghai \
+      -e HOSTNAME=monitoring \
       -v $(pwd)/logs:$WORKDIR/logs \
-      -v $(pwd)/ext-lib:$WORKDIR/ext-lib \
       -v $(pwd)/application.yml:$WORKDIR/config/application.yml \
       -v $(pwd)/sureness.yml:$WORKDIR/config/sureness.yml \
       --restart=always \

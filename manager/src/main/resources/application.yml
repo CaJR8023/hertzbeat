@@ -60,21 +60,11 @@ spring:
       max-lifetime: 120000
 
   jpa:
-    show-sql: false
-    database-platform: org.eclipse.persistence.platform.database.MySQLPlatform
-    database: h2
-    properties:
-      eclipselink:
-        logging:
-          level: SEVERE
+    hibernate:
+      ddl-auto: update
           
   flyway:
-    enabled: true
-    clean-disabled: true
-    baseline-on-migrate: true
-    baseline-version: 1
-    locations:
-      - classpath:db/migration/{vendor}
+    enabled: false
     
   mail:
     # Mail server address, eg: qq-mailbox is smtp.qq.com, qq-exmail is smtp.exmail.qq.com  

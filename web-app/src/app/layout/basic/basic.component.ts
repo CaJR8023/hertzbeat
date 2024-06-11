@@ -75,11 +75,7 @@ import { CONSTANTS } from '../../shared/constants';
     </layout-default>
     <global-footer style="border-top: 1px solid #e5e5e5; min-height: 120px; margin:0;">
       <div style="margin-top: 30px">
-        Apache HertzBeat (incubating) {{ version }}<br />
-        Copyright &copy; {{ currentYear }}
-        <a href="https://hertzbeat.apache.org" target="_blank">Apache HertzBeat</a>
-        <br />
-        Licensed under the Apache License, Version 2.0
+         🤖
       </div>
     </global-footer>
     <setting-drawer *ngIf="showSettingDrawer"></setting-drawer>
@@ -87,8 +83,8 @@ import { CONSTANTS } from '../../shared/constants';
 })
 export class LayoutBasicComponent {
   options: LayoutDefaultOptions = {
-    logoExpanded: `./assets/brand_white.svg`,
-    logoCollapsed: `./assets/logo.svg`
+    logoExpanded: `./assets/gvs_brand.png`,
+    logoCollapsed: `./assets/logo_g.svg`
   };
   avatar: string = `./assets/img/avatar.svg`;
   searchToggleStatus = false;

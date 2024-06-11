@@ -8,8 +8,8 @@ export const environment = {
   production: false,
   useHash: false,
   api: {
-    baseUrl: 'http://localhost:1157/api/',
-    //baseUrl: 'http://192.168.151.215:1157/api/',
+    //baseUrl: 'http://localhost:1157/api/',
+    baseUrl: 'http://192.168.151.215:1157/api/',
     refreshTokenEnabled: true
   }
 } as Environment;
